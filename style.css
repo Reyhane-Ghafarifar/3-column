@@ -1,0 +1,101 @@
+*, *::after, *::before {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+div {
+    height: 450px;
+    padding: 5%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+div:first-child {
+background-color: hsl(31, 77%, 52%);
+border-radius: 10px 0px 0px 10px;
+}
+
+div:nth-child(2) {
+background-color: hsl(184, 100%, 22%);
+}
+
+div:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+img {
+    margin: 5% 0% 10%;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(0, 0%, 95%) ;
+    padding-bottom: 20%;
+}
+
+button {
+    border: solid hsl(0, 0%, 95%) 1px;
+    border-radius: 50px;
+    margin-top: 25%;
+    padding: 5%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: hsl(0, 0%, 95%);
+    
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 95%);
+}
+
+div:first-child button:hover {
+    color: hsl(31, 77%, 52%);
+}
+
+div:nth-child(2) button:hover {
+    color: hsl(184, 100%, 22%);
+}
+
+div:last-child button:hover {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        flex-direction: column;
+    }   
+
+    div {
+        width: 100%;
+    }
+
+    div:first-child {
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+div:last-child {
+    border-radius: 0px 0px 10px 10px;
+}
+
+    button {
+        padding: 5%;
+        position: static;
+    }
+}
